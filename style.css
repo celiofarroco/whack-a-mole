@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: #404040;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+}
+
+.holes-grid {
+  top: 200px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px;
+}
+
+.h1-mole-1,
+.h1-mole-2,
+.h1-mole-3,
+.h1-mole-4,
+.h1-mole-5 {
+  opacity: 0;
+}
+.h1-mole-1,
+.h1-mole-2,
+.h1-mole-3,
+.h1-mole-4,
+.h1-mole-5,
+.empty-hole1 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.empty-hole {
+  opacity: 1;
+}
+
+.h1-mole-1 {
+  animation: moleup 250ms 2s;
+}
+
+.h1-mole-2 {
+  animation: moleup 250ms 2.2s;
+}
+.h1-mole-3 {
+  animation: moleup 250ms 2.4s;
+}
+.h1-mole-4 {
+  animation: moleup 250ms 2.6s;
+}
+.h1-mole-5 {
+  animation: moleup 250ms 2.8s;
+}
+
+.h2-mole-1,
+.h2-mole-2,
+.h2-mole-3,
+.h2-mole-4,
+.h2-mole-5 {
+  opacity: 0;
+}
+.h2-mole-1,
+.h2-mole-2,
+.h2-mole-3,
+.h2-mole-4,
+.h2-mole-5,
+.empty-hole10 {
+  grid-row-start: 3;
+  grid-column-start: 2;
+}
+
+.h2-mole-1 {
+  animation: moleup 250ms 5s;
+}
+
+.h2-mole-2 {
+  animation: moleup 250ms 5.2s;
+}
+.h2-mole-3 {
+  animation: moleup 250ms 5.4s;
+}
+.h2-mole-4 {
+  animation: moleup 250ms 5.6s;
+}
+.h2-mole-5 {
+  animation: moleup 250ms 5.8s;
+}
+
+.h3-mole-1,
+.h3-mole-2,
+.h3-mole-3,
+.h3-mole-4,
+.h3-mole-5 {
+  opacity: 0;
+}
+.h3-mole-1,
+.h3-mole-2,
+.h3-mole-3,
+.h3-mole-4,
+.h3-mole-5,
+.empty-hole12 {
+  grid-row-start: 3;
+  grid-column-start: 4;
+}
+
+.h3-mole-1 {
+  animation: moleup 250ms 7s;
+}
+
+.h3-mole-2 {
+  animation: moleup 250ms 7.2s;
+}
+.h3-mole-3 {
+  animation: moleup 250ms 7.4s;
+}
+.h3-mole-4 {
+  animation: moleup 250ms 7.6s;
+}
+.h3-mole-5 {
+  animation: moleup 250ms 7.8s;
+}
+
+@keyframes moleup {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
